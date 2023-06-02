@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form-table {
+            border-collapse: collapse;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-table th,
+        .form-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 10px solid #ccc;
+            border-right: 10px solid #ccc;
+        }
+
+        .form-table th {
+            background-color: #f2f2f2;
+        }
+
+        .form-table td:last-child {
+            border-right: none;
+        }
+
+        .form-table input[type="text"],
+        .form-table input[type="password"],
+        .form-table textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-table .right-align {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<h1>HTML TASK-8</h1>
+    <table class="form-table">
+        <form>
+            <tr>
+                <th colspan="2">REGISTRATION FORM</th>
+            </tr>
+            <tr>
+                <td><label for="firstname">First Name:</label></td>
+                <td><input type="text" id="fullName" name="fullName" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last name:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+             <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td> <label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td> <input type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Choose your country</option>
+                        <option value="India">India</option>
+                        <option value="Spain">Spain</option>
+                        <option value="France">France</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="language">Language known:</label></td>
+                <td>
+                    <input type="checkbox" id="English" name="language" value="English" required>
+                    <label for="English">English</label><br><br>
+                    <input type="checkbox" id="Telugu" name="language" value="Telugu" required>
+                    <label for="Telugu">Telugu</label><br><br>
+                    <input type="checkbox" id="Kannada" name="language" value="Kannada" required>
+                    <label for="Kannada">Kannada</label><br><br>
+                    <input type="checkbox" id="Tamil" name="language" value="Tamil" required>
+                    <label for="Tamil">Tamil</label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement">I hereby declare all the given details are true</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="right-align">
+                    <a href="https://www.amazon.com/">Log into Amazon website</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
+
